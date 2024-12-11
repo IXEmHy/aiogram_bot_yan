@@ -5,11 +5,15 @@ from aiogram.filters.command import Command
 from config import PAYMENTS_TOKEN, HELP_COMMAND
 
 from KeyboardsBot import *
-from buymodul import PRICE
 
+
+# Объекты роутера, диспетчера, и бота
 from bot_router_dp import *
-from payments import *
 
+
+
+from payments import *
+from buymodul import PRICE
 
 # Хэндлер на команду /buy
 @dp.message(Command('buy'))
@@ -51,7 +55,7 @@ async def cmd_sticker(message: types.Message):
 
 
 
-
+# Автоответчик на события из инлайн клавиатуры(начинает обрабатываться когда пользователь нажмет на кнопку под сообщением)
 @dp.callback_query()
 async def callback_commands(callback: types.CallbackQuery):
     if callback.data == 'start':
