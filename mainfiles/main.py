@@ -12,5 +12,4 @@ async def main():
 if __name__ == "__main__":
     print('Bot was running')
     asyncio.run(main())
-    
     print('Bot was stopped')
