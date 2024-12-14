@@ -1,0 +1,3 @@
+{
+    "code-runner.customCommand": "python -u mainfiles/main.py"
+}

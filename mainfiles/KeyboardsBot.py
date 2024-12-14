@@ -1,7 +1,8 @@
-from aiogram.types import ReplyKeyboardMarkup, KeyboardButton, ReplyKeyboardRemove, \
-                          InlineKeyboardButton, InlineKeyboardMarkup
+from aiogram.types import (ReplyKeyboardMarkup, KeyboardButton, ReplyKeyboardRemove, 
+                          InlineKeyboardButton, InlineKeyboardMarkup)
+
 from config import HELP_COMMAND
-commands = HELP_COMMAND.split(":")[1].split('\n')[1:]
+commands = HELP_COMMAND.split('\n')[1:]
 
 StartsCommands = [KeyboardButton(text=x) for x in commands]
 
